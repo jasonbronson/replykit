@@ -16,7 +16,7 @@ final class RESTInboxServiceTests: XCTestCase {
         let request = try XCTUnwrap(InboxURLProtocol.lastRequest)
         XCTAssertTrue(request.url?.absoluteString.contains("conversations?limit=30&cursor=next-page") == true)
         XCTAssertEqual(request.url?.host, "localhost")
-        XCTAssertEqual(request.url?.port, 8087)
+        XCTAssertEqual(request.url?.port, 8014)
         XCTAssertEqual(request.url?.path, "/v1/api/conversations")
         XCTAssertEqual(request.value(forHTTPHeaderField: "X-ReplyKit-App-Key"), testAppKey)
         XCTAssertEqual(request.value(forHTTPHeaderField: "X-ReplyKit-Customer-ID"), try configuration.customerID().uuidString.lowercased())
@@ -108,7 +108,7 @@ final class RESTInboxServiceTests: XCTestCase {
 
         let file = try await service.downloadAttachment(attachment)
         defer { try? FileManager.default.removeItem(at: file.deletingLastPathComponent()) }
-        XCTAssertEqual(InboxURLProtocol.lastRequest?.url?.absoluteString, "http://localhost:8087/v1/api/attachments/opaque-id")
+        XCTAssertEqual(InboxURLProtocol.lastRequest?.url?.absoluteString, "http://localhost:8014/v1/api/attachments/opaque-id")
         XCTAssertEqual(InboxURLProtocol.lastRequest?.value(forHTTPHeaderField: "X-ReplyKit-App-Key"), testAppKey)
         XCTAssertNotNil(InboxURLProtocol.lastRequest?.value(forHTTPHeaderField: "X-ReplyKit-Customer-ID"))
         XCTAssertEqual(try Data(contentsOf: file), Data("image bytes".utf8))
