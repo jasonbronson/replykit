@@ -1,0 +1,29 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 60;
+  objects = {
+    A10000000000000000000001 /* Project object */ = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2700; }; buildConfigurationList = A10000000000000000000002; compatibilityVersion = "Xcode 15.0"; mainGroup = A10000000000000000000003; packageReferences = (A10000000000000000000009 /* Local ReplyKit */, ); productRefGroup = A10000000000000000000004; projectDirPath = ""; projectRoot = ""; targets = (A10000000000000000000005 /* ReplyKitDemo */, ); };
+    A10000000000000000000002 = { isa = XCConfigurationList; buildConfigurations = (A1000000000000000000000A, A1000000000000000000000B, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+    A1000000000000000000000A /* Project Debug */ = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; }; name = Debug; };
+    A1000000000000000000000B /* Project Release */ = { isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; }; name = Release; };
+    A10000000000000000000003 = { isa = PBXGroup; children = (A10000000000000000000006 /* ReplyKitDemoApp.swift */, ); sourceTree = "<group>"; };
+    A10000000000000000000004 /* Products */ = { isa = PBXGroup; children = (A10000000000000000000008 /* ReplyKitDemo.app */, ); name = Products; sourceTree = "<group>"; };
+    A10000000000000000000005 /* ReplyKitDemo */ = { isa = PBXNativeTarget; buildConfigurationList = A1000000000000000000000C; buildPhases = (A1000000000000000000000D /* Sources */, A1000000000000000000000E /* Frameworks */, A1000000000000000000000F /* Resources */, ); buildRules = (); dependencies = (); name = ReplyKitDemo; packageProductDependencies = (A10000000000000000000010 /* ReplyKit */, ); productName = ReplyKitDemo; productReference = A10000000000000000000008 /* ReplyKitDemo.app */; productType = "com.apple.product-type.application"; };
+    A10000000000000000000006 /* ReplyKitDemoApp.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyKitDemoApp.swift; sourceTree = "<group>"; };
+    A10000000000000000000007 /* Products */ = { isa = PBXGroup; children = (A10000000000000000000008 /* ReplyKitDemo.app */, ); name = Products; sourceTree = "<group>"; };
+    A10000000000000000000008 /* ReplyKitDemo.app */ = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplyKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    A10000000000000000000009 /* Local ReplyKit */ = { isa = XCLocalSwiftPackageReference; relativePath = ../..; };
+    A10000000000000000000010 /* ReplyKit */ = { isa = XCSwiftPackageProductDependency; package = A10000000000000000000009 /* Local ReplyKit */; productName = ReplyKit; };
+    A1000000000000000000000D /* Sources */ = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000011 /* ReplyKitDemoApp.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+    A1000000000000000000000E /* Frameworks */ = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000012 /* ReplyKit in Frameworks */, ); runOnlyForDeploymentPostprocessing = 0; };
+    A1000000000000000000000F /* Resources */ = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+    A10000000000000000000011 /* ReplyKitDemoApp.swift in Sources */ = { isa = PBXBuildFile; fileRef = A10000000000000000000006 /* ReplyKitDemoApp.swift */; };
+    A10000000000000000000012 /* ReplyKit in Frameworks */ = { isa = PBXBuildFile; productRef = A10000000000000000000010 /* ReplyKit */; };
+    A10000000000000000000013 /* Debug */ = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.example.ReplyKitDemo; PRODUCT_NAME = ReplyKitDemo; EXECUTABLE_NAME = ReplyKitDemo; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = ReplyKitDemo; INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+    A10000000000000000000014 /* Release */ = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.example.ReplyKitDemo; PRODUCT_NAME = ReplyKitDemo; EXECUTABLE_NAME = ReplyKitDemo; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = ReplyKitDemo; INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+    A1000000000000000000000C /* Build configuration list for target */ = { isa = XCConfigurationList; buildConfigurations = (A10000000000000000000013 /* Debug */, A10000000000000000000014 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  };
+  rootObject = A10000000000000000000001 /* Project object */;
+}
