@@ -2,7 +2,7 @@ import Foundation
 
 /// REST adapter. Route and payload shapes are documented in API_CONTRACT.md.
 public actor RESTInboxService: InboxService {
-    private let baseURL = URL(string: "http://localhost:8014/v1/api/")!
+    private let baseURL = URL(string: "https://replykit.bronson.dev/v1/api/")!
     private let pageSize = 30
     private let configuration: InboxConfiguration
     private let session: URLSession

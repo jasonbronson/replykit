@@ -2,6 +2,8 @@
 
 ReplyKit is a reusable SwiftUI support inbox. It lets customers send feedback, follow conversations, attach files, and see support replies inside an existing iOS app.
 
+Visit [replykit.bronson.dev](https://replykit.bronson.dev) to learn more, register for an account, and access the support dashboard.
+
 ## Add to an app
 
 In Xcode, choose **File → Add Package Dependencies…** and add the published Git repository, then select the `ReplyKit` library product. For local development, choose **Add Local…** and select this package folder.
@@ -22,7 +24,7 @@ let inboxStore = ReplyKitStore(configuration: configuration)
 ReplyKitView(store: inboxStore, theme: InboxTheme(inboxTitle: "Help"))
 ```
 
-The initializer validates the app key, so replace the example value with the key from the admin panel's **Create app** flow. `InboxConfiguration` takes only the stable app ID and app key; the API URL and paging and polling behavior are set inside the package. The current API URL is `http://localhost:8014/v1/api/`. For a hosted deployment or a physical device, update the package's URL constant to an address reachable from the app. `localhost` refers to the device itself outside the iOS Simulator.
+The initializer validates the app key, so replace the example value with the key from the admin panel's **Create app** flow. `InboxConfiguration` takes only the stable app ID and app key; the API URL and paging and polling behavior are set inside the package. The API URL is `https://replykit.bronson.dev/v1/api/`, using the default HTTPS port (443).
 
 ## Customer identity
 
